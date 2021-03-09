@@ -5,7 +5,10 @@ const TodosContext = React.createContext({
     { id: 1, text: "Eat breakfast", complete: false },
     { id: 2, text: "Do laundary", complete: false },
     { id: 3, text: "Finish project", complete: true },
-  ]
+  ],
+  currentTodo: {
+
+  }
 })
 
 export default TodosContext;
