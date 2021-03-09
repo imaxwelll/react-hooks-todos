@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import TodosContext from "../content";
+import TodosContext from "../context";
 
 export default function TodoForm() {
   const [todo, setTodo] = useState("");

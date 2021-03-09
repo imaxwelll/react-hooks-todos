@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import TodosContext from "../content";
+import TodosContext from "../context";
 
 export default function TodoList() {
 	const { state, dispatch } = useContext(TodosContext);

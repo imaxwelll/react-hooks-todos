@@ -1,7 +1,7 @@
 import React, { useContext, useReducer } from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import TodosContext from './content';
+import TodosContext from './context';
 import todosReducer from './reducer';
 
 import TodoList from './components/TodoList'
