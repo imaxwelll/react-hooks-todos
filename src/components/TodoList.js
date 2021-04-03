@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useContext } from "react";
 import TodosContext from "../context";
 
@@ -29,7 +30,11 @@ export default function TodoList() {
 							/>
 						</button>
 						<button
-              onClick={() => dispatch({ type: "REMOVE_TODO", payload: todo })}
+              onClick={async () => {
+                await axios.delete
+                (`https://hooks-api-imaxwelll.vercel.app/todos/${todo.id}`)
+                dispatch({ type: "REMOVE_TODO", payload: todo })}
+              }
               className="">
 							<img
 								src="https//:icon.now.sh/delete/8b0000"

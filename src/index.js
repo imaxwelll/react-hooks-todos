@@ -13,7 +13,7 @@ const useAPI = endpoint => {
 
   useEffect(() => {
     getData()
-  })
+  }, [])
 
   const getData = async () => {
     const response = await axios.get(endpoint)
